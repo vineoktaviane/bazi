@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "BaZi Companion",
+    "slug": "bazi-companion",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/bazi-icon.png",
+    "userInterfaceStyle": "light",
+    "backgroundColor": "#FFFFFF",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.authore.bazicompanion",
+      "infoPlist": {
+        "NSMotionUsageReason": "Live compass heading for the 8 Mansions direction tool.",
+        "NSLocationWhenInUseUsageDescription": "Used only to read the device compass heading for the 8 Mansions direction tool. Your location is never stored or shared."
+      }
+    },
+    "android": {
+      "package": "com.authore.bazicompanion",
+      "adaptiveIcon": {
+        "backgroundColor": "#BD342A",
+        "foregroundImage": "./assets/bazi-adaptive.png",
+        "monochromeImage": "./assets/bazi-adaptive.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/bazi-favicon.png",
+      "bundler": "metro",
+      "output": "single",
+      "name": "BaZi Companion",
+      "themeColor": "#FFFFFF",
+      "backgroundColor": "#FFFFFF"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationWhenInUsePermission": "Used only to read the device compass heading for the 8 Mansions direction tool. Your location is never stored or shared."
+        }
+      ]
+    ]
+  }
+}
